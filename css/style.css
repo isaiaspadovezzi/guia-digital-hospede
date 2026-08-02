@@ -676,3 +676,24 @@ margin:auto;
 }
 
 }
+.video-demo{
+
+    max-width:380px;
+
+    margin:40px auto;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.video-demo video{
+
+    width:100%;
+
+    display:block;
+
+}
