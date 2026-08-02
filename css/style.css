@@ -1,0 +1,478 @@
+/* ===========================================
+   GUIA DIGITAL DO HÓSPEDE
+   ibis Styles Curitiba Centro Cívico
+=========================================== */
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --azul:#123E6B;
+    --verde:#72BF44;
+    --verde-hover:#5fa538;
+    --cinza:#f5f7fa;
+    --texto:#333333;
+    --branco:#ffffff;
+    --sombra:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--cinza);
+    color:var(--texto);
+
+}
+
+/* ================= HEADER ================= */
+
+header{
+
+    background:var(--azul);
+    color:white;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.logo{
+
+    width:170px;
+    max-width:90%;
+    margin-bottom:20px;
+
+}
+
+header h1{
+
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:10px;
+
+}
+
+header p{
+
+    font-size:20px;
+    opacity:.9;
+
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:50px 20px;
+
+}
+
+/* ================= TITULO ================= */
+
+.titulo{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+}
+
+.titulo h2{
+
+    font-size:34px;
+
+    color:var(--azul);
+
+    margin-bottom:10px;
+
+}
+
+.titulo p{
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+/* ================= MENU ================= */
+
+.menu{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:22px;
+
+}
+
+/* ================= CARDS ================= */
+
+.card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    text-decoration:none;
+
+    background:white;
+
+    color:inherit;
+
+    padding:24px;
+
+    border-radius:20px;
+
+    box-shadow:var(--sombra);
+
+    transition:.30s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.card .icone{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    background:#eef6ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    flex-shrink:0;
+
+}
+
+.card h3{
+
+    font-size:24px;
+
+    margin-bottom:6px;
+
+    color:var(--azul);
+
+}
+
+.card p{
+
+    color:#666;
+
+    font-size:16px;
+
+    line-height:1.5;
+
+}
+
+/* CARD RECEPÇÃO */
+
+.destaque{
+
+    background:var(--verde);
+
+    color:white;
+
+}
+
+.destaque h3{
+
+    color:white;
+
+}
+
+.destaque p{
+
+    color:white;
+
+}
+
+.destaque .icone{
+
+    background:rgba(255,255,255,.20);
+
+}
+
+/* ================= BOTÕES ================= */
+
+.botao{
+
+    display:inline-block;
+
+    background:var(--verde);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 26px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.botao:hover{
+
+    background:var(--verde-hover);
+
+}
+
+/* ================= VOLTAR ================= */
+
+.btn-voltar{
+
+    position:absolute;
+
+    top:20px;
+
+    left:20px;
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    text-decoration:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:26px;
+
+    backdrop-filter:blur(8px);
+
+    transition:.3s;
+
+}
+
+.btn-voltar:hover{
+
+    background:rgba(255,255,255,.30);
+
+}
+
+/* ================= GALERIA ================= */
+
+.galeria{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.galeria img{
+
+    width:100%;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:var(--sombra);
+
+}
+
+.galeria img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ================= LIGHTBOX ================= */
+
+#lightbox{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.90);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+#lightbox img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    border-radius:20px;
+
+}
+
+#lightbox span{
+
+    position:absolute;
+
+    top:30px;
+
+    right:35px;
+
+    color:white;
+
+    font-size:45px;
+
+    cursor:pointer;
+
+}
+
+/* ================= VIDEO ================= */
+
+video{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:var(--sombra);
+
+    margin-bottom:30px;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:var(--azul);
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    margin-top:60px;
+
+}
+
+footer small{
+
+    opacity:.8;
+
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media(max-width:768px){
+
+header{
+
+    padding:45px 20px;
+
+}
+
+.logo{
+
+    width:130px;
+
+}
+
+header h1{
+
+    font-size:30px;
+
+}
+
+header p{
+
+    font-size:17px;
+
+}
+
+.titulo h2{
+
+    font-size:28px;
+
+}
+
+.menu{
+
+    grid-template-columns:1fr;
+
+}
+
+.card{
+
+    padding:20px;
+
+}
+
+.card h3{
+
+    font-size:21px;
+
+}
+
+.card p{
+
+    font-size:15px;
+
+}
+
+.card .icone{
+
+    width:60px;
+
+    height:60px;
+
+    font-size:28px;
+
+}
+
+}
