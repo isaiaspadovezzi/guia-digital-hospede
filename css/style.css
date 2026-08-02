@@ -693,7 +693,10 @@ margin:auto;
 .video-demo video{
 
     width:100%;
-
     display:block;
+
+    border-radius:20px;
+
+    object-fit:cover;
 
 }
