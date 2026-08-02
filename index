@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guia Digital do Hóspede</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <img src="img/logo-ibisstyles.png" class="logo" alt="ibis Styles">
+
+    <h1>Bem-vindo!</h1>
+
+    <p>Seu Guia Digital durante toda a hospedagem.</p>
+
+</header>
+
+
+<main class="container">
+
+    <section class="titulo">
+
+        <h2>Como podemos ajudar?</h2>
+
+        <p>Escolha uma das opções abaixo.</p>
+
+    </section>
+
+
+    <section class="menu">
+
+        <a href="pages/wifi.html" class="card">
+
+            <div class="icone">📶</div>
+
+            <div>
+
+                <h3>Wi-Fi</h3>
+
+                <p>Conecte-se à internet.</p>
+
+            </div>
+
+        </a>
+
+
+
+        <a href="pages/ar-condicionado.html" class="card">
+
+            <div class="icone">❄️</div>
+
+            <div>
+
+                <h3>Ar-condicionado</h3>
+
+                <p>Como ligar e solucionar problemas.</p>
+
+            </div>
+
+        </a>
+
+
+
+        <a href="pages/tv.html" class="card">
+
+            <div class="icone">📺</div>
+
+            <div>
+
+                <h3>TV</h3>
+
+                <p>Guia de utilização.</p>
+
+            </div>
+
+        </a>
+
+
+
+        <a href="pages/cafe.html" class="card">
+
+            <div class="icone">🍳</div>
+
+            <div>
+
+                <h3>Café da Manhã</h3>
+
+                <p>Horários e informações.</p>
+
+            </div>
+
+        </a>
+
+
+
+        <a href="pages/bar.html" class="card">
+
+            <div class="icone">🍽️</div>
+
+            <div>
+
+                <h3>Bar & Restaurante</h3>
+
+                <p>Cardápio e valores.</p>
+
+            </div>
+
+        </a>
+
+
+
+        <a href="pages/checkout.html" class="card">
+
+            <div class="icone">🧳</div>
+
+            <div>
+
+                <h3>Check-out</h3>
+
+                <p>Horários e informações.</p>
+
+            </div>
+
+        </a>
+
+
+
+        <a href="pages/servicos.html" class="card">
+
+            <div class="icone">🛎️</div>
+
+            <div>
+
+                <h3>Serviços do Hotel</h3>
+
+                <p>Tudo o que oferecemos.</p>
+
+            </div>
+
+        </a>
+
+
+
+        <a href="pages/cidade.html" class="card">
+
+            <div class="icone">📍</div>
+
+            <div>
+
+                <h3>Guia da Cidade</h3>
+
+                <p>Restaurantes e turismo.</p>
+
+            </div>
+
+        </a>
+
+
+
+        <a href="pages/recepcao.html" class="card destaque">
+
+            <div class="icone">💬</div>
+
+            <div>
+
+                <h3>Falar com a Recepção</h3>
+
+                <p>Estamos disponíveis 24 horas.</p>
+
+            </div>
+
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>ibis Styles Curitiba Centro Cívico</p>
+
+    <small>Versão 1.0</small>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
