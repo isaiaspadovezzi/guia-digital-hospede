@@ -222,7 +222,32 @@ header p{
     background:rgba(255,255,255,.20);
 
 }
+/* ================= ÍCONES ================= */
 
+.icone{
+
+    width:70px;
+    height:70px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#eef5ff;
+
+    border-radius:18px;
+
+    flex-shrink:0;
+
+}
+
+.icone i{
+
+    font-size:34px;
+
+    color:#123E6B;
+
+}
 /* ================= BOTÕES ================= */
 
 .botao{
