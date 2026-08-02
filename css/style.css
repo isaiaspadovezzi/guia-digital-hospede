@@ -700,3 +700,16 @@ margin:auto;
     object-fit:cover;
 
 }
+.logo-link{
+    display:inline-block;
+    text-decoration:none;
+}
+
+.logo-link:hover{
+    transform:scale(1.03);
+    transition:0.3s;
+}
+
+.logo-link img{
+    display:block;
+}
