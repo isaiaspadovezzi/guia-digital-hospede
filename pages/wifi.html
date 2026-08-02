@@ -53,7 +53,8 @@ IBIS STYLES
 
 </div>
 
-<img src="../img/wifi1.jpeg">
+<img src="../img/wifi1.jpeg"
+     onclick="abrirImagem(this.src)">
 
 </div>
 
@@ -74,7 +75,8 @@ Role até o final da página e toque em
 
 </p>
 
-<img src="../img/wifi2.jpeg">
+<img src="../img/wifi2.jpeg"
+     onclick="abrirImagem(this.src)">
 
 </div>
 
@@ -97,7 +99,8 @@ Agora você já está conectado.
 
 </p>
 
-<img src="../img/wifi3.jpeg">
+<img src="../img/wifi3.jpeg"
+     onclick="abrirImagem(this.src)">
 
 </div>
 
@@ -142,10 +145,17 @@ Veja o passo a passo em vídeo
 Falar com a Recepção
 
 </a>
+ <div id="lightbox" onclick="fecharImagem()">
+
+    <span>&times;</span>
+
+    <img id="imagemGrande">
 
 </div>
-    <script src="../js/script.js"></script>
+
+<script src="../js/script.js"></script>
 
 </body>
+
 
 </html>
