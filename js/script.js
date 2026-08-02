@@ -1,2 +1,18 @@
+// =============================
+// GUIA DIGITAL DO HÓSPEDE
+// script.js
+// =============================
 
-console.log("Script carregado com sucesso!");
+function abrirImagem(src){
+
+    document.getElementById("imagemGrande").src = src;
+
+    document.getElementById("lightbox").style.display = "flex";
+
+}
+
+function fecharImagem(){
+
+    document.getElementById("lightbox").style.display = "none";
+
+}
