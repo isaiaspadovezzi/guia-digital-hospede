@@ -717,29 +717,29 @@ margin:auto;
 
     position:fixed;
 
-    right:20px;
-
     bottom:20px;
 
-    width:65px;
-
-    height:65px;
+    right:20px;
 
     background:#25D366;
 
-    color:white;
+    color:#fff;
 
-    border-radius:50%;
+    padding:14px 18px;
+
+    border-radius:40px;
 
     display:flex;
 
-    justify-content:center;
-
     align-items:center;
 
-    font-size:34px;
+    gap:10px;
 
     text-decoration:none;
+
+    font-weight:600;
+
+    font-size:16px;
 
     box-shadow:0 8px 20px rgba(0,0,0,.25);
 
@@ -749,10 +749,30 @@ margin:auto;
 
 }
 
+.whatsapp-fixo i{
+
+    font-size:28px;
+
+}
+
 .whatsapp-fixo:hover{
 
-    transform:scale(1.1);
+    transform:scale(1.05);
 
-    background:#20b858;
+}
+
+@media (max-width:768px){
+
+.whatsapp-fixo{
+
+    left:15px;
+
+    right:15px;
+
+    bottom:15px;
+
+    justify-content:center;
+
+}
 
 }
