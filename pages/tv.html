@@ -2,220 +2,513 @@
 <html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guia de Canais</title>
 
-<title>TV Local</title>
+    <link rel="stylesheet" href="../css/style.css">
 
-<link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f3f4f6;
+            margin: 0;
+            color: #243b55;
+        }
+
+
+        /* CABEÇALHO */
+
+        .hero {
+            background: #294b70;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .hero .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+
+        /* CONTAINER */
+
+        .canais-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px 60px;
+        }
+
+
+        /* GRID */
+
+        .canais-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+
+        /* COLUNAS */
+
+        .coluna-canais {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+
+        /* CARD */
+
+        .categoria {
+            background: white;
+            border-radius: 18px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+
+        /* TÍTULO DA CATEGORIA */
+
+        .categoria-titulo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .categoria-icone {
+            width: 50px;
+            height: 50px;
+
+            background: #6fb437;
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 25px;
+            flex-shrink: 0;
+        }
+
+        .categoria h2 {
+            margin: 0;
+            font-size: 21px;
+            color: #294b70;
+        }
+
+
+        /* LISTA */
+
+        .lista-canais {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .lista-canais li {
+            display: grid;
+            grid-template-columns: 55px 15px 1fr;
+
+            gap: 5px;
+
+            padding: 5px 0;
+
+            font-size: 15px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .lista-canais li:last-child {
+            border-bottom: none;
+        }
+
+
+        /* NÚMERO */
+
+        .canal-numero {
+            font-weight: 700;
+            color: #5d9630;
+        }
+
+
+        /* RESPONSIVO */
+
+        @media (max-width: 900px) {
+
+            .canais-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .hero {
+                padding: 35px 20px;
+            }
+
+            .hero h1 {
+                font-size: 26px;
+            }
+
+            .canais-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .categoria {
+                padding: 20px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
+
 <body>
 
-<header class="hero">
 
-    <a href="../index.html" class="logo-link">
+    <!-- CABEÇALHO -->
 
-        <img
-            src="../img/logo-ibisstyles.png"
-            class="logo"
-            alt="Ibis Styles"
-        >
+    <header class="hero">
 
-    </a>
+        <a href="../index.html">
 
-    <h1>Como assistir à TV Local</h1>
+            <img src="../img/logo-ibisstyles.png"
+                class="logo"
+                alt="Ibis Styles">
 
-    <p>Globo, SBT, Band e outros canais abertos.</p>
+        </a>
 
-</header>
+        <h1>Guia de Canais</h1>
 
+        <p>Confira os canais disponíveis na televisão.</p>
 
-<div class="container">
+    </header>
 
 
-    <!-- PASSO 1 -->
 
-    <div class="passo">
+    <main class="canais-container">
 
-        <div class="numero">1</div>
 
-        <div class="conteudo">
+        <div class="canais-grid">
 
-            <h2>Ligue a TV</h2>
 
-            <p>
-                Utilize o controle remoto e pressione o botão
-                <strong>Power</strong> para ligar a televisão.
-            </p>
+            <!-- COLUNA 1 -->
 
-            <img
-                src="../img/tv1.png"
-                alt="Controle remoto da TV"
-                onclick="abrirImagem(this.src)"
-            >
+            <div class="coluna-canais">
+
+
+                <!-- TV ABERTA -->
+
+                <section class="categoria">
+
+                    <div class="categoria-titulo">
+
+                        <div class="categoria-icone">
+                            <i class="bi bi-tv"></i>
+                        </div>
+
+                        <h2>TV aberta</h2>
+
+                    </div>
+
+
+                    <ul class="lista-canais">
+
+                        <li><span class="canal-numero">13.1</span><span>-</span><span>Band</span></li>
+                        <li><span class="canal-numero">13.2</span><span>-</span><span>SBT</span></li>
+                        <li><span class="canal-numero">13.3</span><span>-</span><span>CNT</span></li>
+                        <li><span class="canal-numero">13.4</span><span>-</span><span>RIC TV</span></li>
+                        <li><span class="canal-numero">14.1</span><span>-</span><span>RPC TV</span></li>
+                        <li><span class="canal-numero">14.2</span><span>-</span><span>Rede TV</span></li>
+
+                    </ul>
+
+                </section>
+
+
+
+                <!-- ESPORTES -->
+
+                <section class="categoria">
+
+                    <div class="categoria-titulo">
+
+                        <div class="categoria-icone">
+                            <i class="bi bi-trophy"></i>
+                        </div>
+
+                        <h2>Esportes</h2>
+
+                    </div>
+
+
+                    <ul class="lista-canais">
+
+                        <li><span class="canal-numero">19.3</span><span>-</span><span>ESPN 4</span></li>
+                        <li><span class="canal-numero">19.4</span><span>-</span><span>Fox Sports 2</span></li>
+                        <li><span class="canal-numero">20.1</span><span>-</span><span>ESPN</span></li>
+                        <li><span class="canal-numero">20.2</span><span>-</span><span>ESPN 3</span></li>
+                        <li><span class="canal-numero">20.3</span><span>-</span><span>ESPN 2</span></li>
+                        <li><span class="canal-numero">20.4</span><span>-</span><span>Band Sports</span></li>
+                        <li><span class="canal-numero">21.1</span><span>-</span><span>Woohoo</span></li>
+                        <li><span class="canal-numero">23.3</span><span>-</span><span>Fish TV</span></li>
+
+                    </ul>
+
+                </section>
+
+
+
+                <!-- FILMES -->
+
+                <section class="categoria">
+
+                    <div class="categoria-titulo">
+
+                        <div class="categoria-icone">
+                            <i class="bi bi-film"></i>
+                        </div>
+
+                        <h2>Filmes e séries</h2>
+
+                    </div>
+
+
+                    <ul class="lista-canais">
+
+                        <li><span class="canal-numero">24.2</span><span>-</span><span>TLC</span></li>
+                        <li><span class="canal-numero">26.2</span><span>-</span><span>Paramount</span></li>
+                        <li><span class="canal-numero">26.3</span><span>-</span><span>Space</span></li>
+                        <li><span class="canal-numero">26.2</span><span>-</span><span>Paramount</span></li>
+                        <li><span class="canal-numero">26.4</span><span>-</span><span>TNT Séries</span></li>
+                        <li><span class="canal-numero">27.1</span><span>-</span><span>TNT</span></li>
+                        <li><span class="canal-numero">27.2</span><span>-</span><span>Star Channel</span></li>
+                        <li><span class="canal-numero">27.3</span><span>-</span><span>Cine Canal</span></li>
+                        <li><span class="canal-numero">27.4</span><span>-</span><span>FX</span></li>
+                        <li><span class="canal-numero">28.1</span><span>-</span><span>TCM</span></li>
+                        <li><span class="canal-numero">29.2</span><span>-</span><span>Discovery ID</span></li>
+
+                    </ul>
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- COLUNA 2 -->
+
+            <div class="coluna-canais">
+
+
+                <!-- NOTÍCIAS -->
+
+                <section class="categoria">
+
+                    <div class="categoria-titulo">
+
+                        <div class="categoria-icone">
+                            <i class="bi bi-newspaper"></i>
+                        </div>
+
+                        <h2>Notícias</h2>
+
+                    </div>
+
+
+                    <ul class="lista-canais">
+
+                        <li><span class="canal-numero">16.2</span><span>-</span><span>TV Camara</span></li>
+                        <li><span class="canal-numero">16.4</span><span>-</span><span>TV Brasil</span></li>
+                        <li><span class="canal-numero">16.5</span><span>-</span><span>TV Assembleia</span></li>
+                        <li><span class="canal-numero">17.1</span><span>-</span><span>TV Justiça</span></li>
+                        <li><span class="canal-numero">17.2</span><span>-</span><span>Al Jazeera</span></li>
+                        <li><span class="canal-numero">17.3</span><span>-</span><span>RTP América</span></li>
+                        <li><span class="canal-numero">17.4</span><span>-</span><span>NHK</span></li>
+                        <li><span class="canal-numero">18.1</span><span>-</span><span>Band News</span></li>
+                        <li><span class="canal-numero">18.2</span><span>-</span><span>CNN Brasil</span></li>
+                        <li><span class="canal-numero">18.3</span><span>-</span><span>CNN Espanhol</span></li>
+                        <li><span class="canal-numero">19.1</span><span>-</span><span>CNN Internacional</span></li>
+                        <li><span class="canal-numero">23.2</span><span>-</span><span>Agro Mais</span></li>
+
+                    </ul>
+
+                </section>
+
+
+
+                <!-- ENTRETENIMENTO -->
+
+                <section class="categoria">
+
+                    <div class="categoria-titulo">
+
+                        <div class="categoria-icone">
+                            <i class="bi bi-mask"></i>
+                        </div>
+
+                        <h2>Entretenimento & Cultura</h2>
+
+                    </div>
+
+
+                    <ul class="lista-canais">
+
+                        <li><span class="canal-numero">23.3</span><span>-</span><span>SESC TV</span></li>
+                        <li><span class="canal-numero">24.1</span><span>-</span><span>Futura</span></li>
+                        <li><span class="canal-numero">24.3</span><span>-</span><span>MTV</span></li>
+                        <li><span class="canal-numero">24.4</span><span>-</span><span>MTV Live</span></li>
+                        <li><span class="canal-numero">25.1</span><span>-</span><span>Comedy Central</span></li>
+                        <li><span class="canal-numero">28.2</span><span>-</span><span>Discovery Home & Health</span></li>
+                        <li><span class="canal-numero">28.3</span><span>-</span><span>Discovery Turbo</span></li>
+                        <li><span class="canal-numero">28.4</span><span>-</span><span>Discovery Science</span></li>
+                        <li><span class="canal-numero">28.5</span><span>-</span><span>Discovery World</span></li>
+                        <li><span class="canal-numero">29.1</span><span>-</span><span>Discovery Channel</span></li>
+                        <li><span class="canal-numero">29.3</span><span>-</span><span>National Geographic</span></li>
+                        <li><span class="canal-numero">29.4</span><span>-</span><span>Animal Planet</span></li>
+                        <li><span class="canal-numero">29.5</span><span>-</span><span>Discovery Theather</span></li>
+                        <li><span class="canal-numero">30.1</span><span>-</span><span>Rai Italia</span></li>
+                        <li><span class="canal-numero">30.2</span><span>-</span><span>TVE</span></li>
+                        <li><span class="canal-numero">30.3</span><span>-</span><span>CATVE</span></li>
+
+                    </ul>
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- COLUNA 3 -->
+
+            <div class="coluna-canais">
+
+
+                <!-- TURISMO -->
+
+                <section class="categoria">
+
+                    <div class="categoria-titulo">
+
+                        <div class="categoria-icone">
+                            <i class="bi bi-suitcase-lg"></i>
+                        </div>
+
+                        <h2>Turismo & Viagens</h2>
+
+                    </div>
+
+
+                    <ul class="lista-canais">
+
+                        <li><span class="canal-numero">16.3</span><span>-</span><span>TV Paraná</span></li>
+
+                    </ul>
+
+                </section>
+
+
+
+                <!-- RELIGIÃO -->
+
+                <section class="categoria">
+
+                    <div class="categoria-titulo">
+
+                        <div class="categoria-icone">
+                            <i class="bi bi-cross"></i>
+                        </div>
+
+                        <h2>Religião</h2>
+
+                    </div>
+
+
+                    <ul class="lista-canais">
+
+                        <li><span class="canal-numero">14.4</span><span>-</span><span>Canção Nova</span></li>
+                        <li><span class="canal-numero">15.1</span><span>-</span><span>TV Aparecida</span></li>
+                        <li><span class="canal-numero">15.2</span><span>-</span><span>TV Pai Eterno</span></li>
+                        <li><span class="canal-numero">15.3</span><span>-</span><span>Rede Vida</span></li>
+                        <li><span class="canal-numero">15.4</span><span>-</span><span>Evangelizar</span></li>
+                        <li><span class="canal-numero">26.1</span><span>-</span><span>Rit TV</span></li>
+
+                    </ul>
+
+                </section>
+
+
+
+                <!-- KIDS -->
+
+                <section class="categoria">
+
+                    <div class="categoria-titulo">
+
+                        <div class="categoria-icone">
+                            <i class="bi bi-emoji-smile"></i>
+                        </div>
+
+                        <h2>Kids</h2>
+
+                    </div>
+
+
+                    <ul class="lista-canais">
+
+                        <li><span class="canal-numero">21.2</span><span>-</span><span>Discovery Kids</span></li>
+                        <li><span class="canal-numero">21.3</span><span>-</span><span>Cartoonito</span></li>
+                        <li><span class="canal-numero">21.4</span><span>-</span><span>Cartoon Network</span></li>
+                        <li><span class="canal-numero">22.3</span><span>-</span><span>Disney Channel</span></li>
+                        <li><span class="canal-numero">22.4</span><span>-</span><span>Nick Junior</span></li>
+                        <li><span class="canal-numero">23.1</span><span>-</span><span>Nickelodeon</span></li>
+
+                    </ul>
+
+                </section>
+
+
+            </div>
+
 
         </div>
 
-    </div>
 
+    </main>
 
-    <!-- PASSO 2 -->
-
-    <div class="passo">
-
-        <div class="numero">2</div>
-
-        <div class="conteudo">
-
-            <h2>Acesse "Live TV"</h2>
-
-            <p>
-                Na tela inicial da televisão, selecione a opção
-                <strong>Live TV</strong>, localizada no canto inferior
-                esquerdo da tela.
-            </p>
-
-            <img
-                src="../img/tv2.png"
-                alt="Opção Live TV na televisão"
-                onclick="abrirImagem(this.src)"
-            >
-
-        </div>
-
-    </div>
-
-
-    <!-- PASSO 3 -->
-
-    <div class="passo">
-
-        <div class="numero">3</div>
-
-        <div class="conteudo">
-
-            <h2>Escolha o canal</h2>
-
-            <p>
-                Depois de acessar o <strong>Live TV</strong>,
-                utilize as setas ou os botões de canal do controle
-                remoto para escolher o canal desejado.
-            </p>
-
-            <img
-                src="../img/tv3.png"
-                alt="Canais disponíveis na TV"
-                onclick="abrirImagem(this.src)"
-            >
-
-        </div>
-
-    </div>
-
-
-    <!-- VÍDEO -->
-
-    <div class="video-demo">
-
-        <h2>
-            <i class="bi bi-play-circle-fill"></i>
-            Veja como fazer
-        </h2>
-
-        <video
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="auto"
-        >
-
-            <source
-                src="../video/tv.mp4"
-                type="video/mp4"
-            >
-
-            Seu navegador não suporta vídeo.
-
-        </video>
-
-    </div>
-
-
-    <!-- DICAS -->
-
-    <div class="dica">
-
-        <h2>
-            <i class="bi bi-lightbulb"></i>
-            Não encontrou os canais?
-        </h2>
-
-        <ul>
-
-            <li>
-                Verifique se a TV está ligada.
-            </li>
-
-            <li>
-                Confirme se você está na opção
-                <strong>Live TV</strong>.
-            </li>
-
-            <li>
-                Utilize os botões de canal ou as setas do controle remoto.
-            </li>
-
-            <li>
-                Se ainda tiver dificuldade, fale com a recepção.
-            </li>
-
-        </ul>
-
-    </div>
-
-
-    <!-- RECEPÇÃO -->
-
-    <a
-        class="whatsapp"
-        href="https://wa.me/554133240469?text=Olá!%20Estou%20com%20dificuldade%20para%20acessar%20a%20TV%20local."
-        target="_blank"
-    >
-
-        <i class="bi bi-headset"></i>
-
-        Falar com a Recepção
-
-    </a>
-
-
-</div>
-
-
-<!-- LIGHTBOX -->
-
-<div
-    id="lightbox"
-    onclick="fecharImagem()"
->
-
-    <span>&times;</span>
-
-    <img id="imagemGrande">
-
-</div>
-
-
-<script src="../js/script.js"></script>
 
 </body>
 
